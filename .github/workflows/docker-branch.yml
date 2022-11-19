@@ -3,6 +3,7 @@ name: build docker image
 on:
   push:
     branches:
+      - '**'
       - '!main'
 
 jobs:
