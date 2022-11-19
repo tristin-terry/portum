@@ -1,4 +1,4 @@
-name: build docker image
+name: branch image
 
 on:
   push:
@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: tristinterry/portum:nightly
+          tags: tristinterry/portum:${{ GITHUB_SHA }}
