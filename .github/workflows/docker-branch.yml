@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: tristinterry/portum:${{ GITHUB_SHA }}
+          tags: tristinterry/portum:${{ github.GITHUB_SHA }}
